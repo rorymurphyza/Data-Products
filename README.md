@@ -6,9 +6,7 @@ This is the assignment submission for the Developing Data Products course
 ### The Shiny App
 
 Part of the submission is in the form of a Shiny app. Source code for the app can be found in the Assignment folder.
-The Shiny app is hosted on Shiny.io at the link: https://rorymurphyza.shinyapps.io/Assignment/
-
-<a href="https://rorymurphyza.shinyapps.io/Assignment/">https://rorymurphyza.shinyapps.io/Assignment/</a>
+The Shiny app is hosted on Shiny.io at the link: <a href="https://rorymurphyza.shinyapps.io/Assignment/" target="_blank">https://rorymurphyza.shinyapps.io/Assignment/</a>
 
 ### The Slidify Presentation
 
