@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calorie Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Calorie Calculator">
+  <meta name="author" content="rorymurphyza">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Calorie Calculator</h1>
+    <h2>Estimating calories burned while running</h2>
+    <p>rorymurphyza<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The importance of keeping physically fit is being emphasised on a daily basis. We are slowly starting to understand the impact that physical exercise has on our weight, longevity and even our mental capacity.</p>
+
+<p>In order to help encourage physical exercise, especially running, I have put together this Calorie Calculator. This will give people an understanding of the number of calories that can be burned by engaging in running. Running is one of the easiest ways to get and stay fit as it has very low equipment costs and can be enjoyed both indoors and outdoors.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Required Inputs</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Research has shown that the number of calories burned while running can be estimated quite accurately by using only a few variables, as shown:</p>
+
+<ol>
+<li> <em>The Age of the runner.</em> This gives an indication of the heart rate during the run. The age of the runner has an almost negligible impact on the calories burned.</li>
+<li> <em>The Weight of the runner.</em> This gives an indication of the energy required to move the mass of the runner.</li>
+<li> <strong>The Gradient of the route.</strong> This is a very important variable and helps calculate the energy required in lifting the runner&#39;s body up and down hills.</li>
+<li> <strong>The Distance of the run.</strong> This has the greatest impact on the calories burned.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Calculating the Calories Burned</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Calorie Calculator uses the equations defined by R Mergaria et. al. from their experimental data gathering. These equations can be seen at <a href="http://www.shapesense.com/fitness-exercise/calculators/running-calorie-burn-calculator.shtml">http://www.shapesense.com/fitness-exercise/calculators/running-calorie-burn-calculator.shtml</a>.</p>
+
+<p>For a an average 30-year-old, 80kg runner running on a flat route, the equation below can be used to calculate the calories burned:</p>
+
+<p>\[Calories = (((0.05 * Gradient) + 0.95) * Weight[KG]) * Distance [KM] * CFF\]</p>
+
+<p>Where CFF is an estimate of the \(V_{o2}max\), which is calculated using the equation:</p>
+
+<p>\[CFF = 15.3 * Max Heart Rate / Resting Heart Rate\] </p>
+
+<p>and Max Heart Rate is calculated using the age of the runner.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Calorie Consumption</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For our 30-year-old, 80kg runner, the calories burned over the course of a 10km run can be illustrated:</p>
+
+<p><img src="assets/fig/set_env-1.png" title="plot of chunk set_env" alt="plot of chunk set_env" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Required Inputs'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Calculating the Calories Burned'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The Calorie Consumption'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
