@@ -1,0 +1,28 @@
+Formulas
+
+CB --> Calories Burned
+G --> Grade of running surface, expressed as integer (ie 10% uphill = 10. 10% downhill = -10)
+W --> Weight in KG
+DRK --> Distance run in KM
+CFF --> Cardio respitory fitness factor
+TF --> Treadmill Factor, where TF = 0.84 is road running and TF = 0 is on a treadmill. This is a correcting factor for air resistance.
+
+For CFF:
+V02Max = 15.3 * Max Heart Rate (208-(0.7*Age)) / Resting Heart Rate
+If V02Max > 56 --> CFF = 1.00
+Else if V02Max between 54 and 56 --> CFF = 1.01
+Else if V02Max between 52 and 54 --> CFF = 1.02
+Else if V02Max between 50 and 52 --> CFF = 1.03
+Else if V02Max between 48 and 50 --> CFF = 1.04
+Else if V02Max between 46 and 48 --> CFF = 1.05
+Else if V02Max between 44 and 48 --> CFF = 1.06
+Else if V02Max < 44 --> CFF = 1.07
+
+Calorie burn Calculations
+This is dependant on the Grade of the running path
+For -15 to -10 --> CB = (((-0.02*G) + 0.35) * WKG + TF)*DRK*CFF
+For -10 to 0 --> CB = (((0.04*G) + 0.95) * WKG + TF)*DRK*CFF
+For 0 to 10 --> CB = (((0.05*G) + 0.95) * WKG + TF)*DRK*CFF
+For 10 to 15 --> CB = (((0.07*G) + 0.75) * WKG + TF)*DRK*CFF
+
+http://www.shapesense.com/fitness-exercise/calculators/running-calorie-burn-calculator.shtml
